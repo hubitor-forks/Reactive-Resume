@@ -46,6 +46,8 @@ services:
   app:
     image: amruthpillai/reactive-resume:latest
     restart: unless-stopped
+    expose:
+      - "3000"
     depends_on:
       - postgres
       - minio
